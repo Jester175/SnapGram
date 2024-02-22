@@ -6,6 +6,8 @@ import SignupForm from "./_auth/forms/SignupForm";
 import RootLayout from "./_root/RootLayout";
 import { Home } from "./_root/pages";
 
+import { Toaster } from "./components/ui/toaster";
+
 import "./globals.css";
 
 const App = () => {
@@ -23,6 +25,8 @@ const App = () => {
           <Route index element={<Home />} />
         </Route>
       </Routes>
+
+      <Toaster />
     </main>
   );
 };
