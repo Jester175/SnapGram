@@ -1,6 +1,6 @@
 # Snapgram
 
-<i>in development</i>
+<i>in development</i><br>
 <b>updated: 26/02/2024</b>
 
 <b>Sign-up Form:</b>
