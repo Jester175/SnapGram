@@ -1,5 +1,7 @@
 # Snapgram
-<b>updated: 23/02/2024</b>
+
+<i>in development</i>
+<b>updated: 26/02/2024</b>
 
 <b>Sign-up Form:</b>
 ![SignUp Illustration](https://i.ibb.co/Mgn1yj5/int.png)
@@ -9,3 +11,6 @@
 
 <b>Home Page:</b>
 ![Home Page Illustration](https://i.ibb.co/z8TWR96/home.png)
+
+<b>Post Page:</b>
+![Post Page Illustration](https://i.ibb.co/LnDZghH/postPage.png)
