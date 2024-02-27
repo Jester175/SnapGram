@@ -1,12 +1,22 @@
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
+import {
+  Home,
+  Explore,
+  Saved,
+  CreatePost,
+  Profile,
+  EditPost,
+  PostDetails,
+  UpdateProfile,
+  AllUsers,
+} from "@/_root/pages";
 import AuthLayout from "./_auth/AuthLayout";
-import SigininForm from "./_auth/forms/SigininForm";
-import SignupForm from "./_auth/forms/SignupForm";
 import RootLayout from "./_root/RootLayout";
-import { AllUsers, CreatePost, EditPost, Explore, Home, PostDetails, Profile, Saved, UpdateProfile } from "./_root/pages";
+import SignupForm from "@/_auth/forms/SignupForm";
+import SigninForm from "./_auth/forms/SigninForm";
 
-import { Toaster } from "./components/ui/toaster";
+import { Toaster } from "@/components/ui/toaster";
 
 import "./globals.css";
 
@@ -14,13 +24,13 @@ const App = () => {
   return (
     <main className="flex h-screen">
       <Routes>
-        {/*public routes*/}
+        {/* public routes */}
         <Route element={<AuthLayout />}>
-          <Route path="/sign-in" element={<SigininForm />} />
+          <Route path="/sign-in" element={<SigninForm />} />
           <Route path="/sign-up" element={<SignupForm />} />
         </Route>
 
-        {/*private routes*/}
+        {/* private routes */}
         <Route element={<RootLayout />}>
           <Route index element={<Home />} />
           <Route path="/explore" element={<Explore />} />
