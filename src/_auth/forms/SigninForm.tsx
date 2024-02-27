@@ -50,13 +50,8 @@ const SigninForm = () => {
 
     const isLoggedIn = await checkAuthUser();
 
-    console.log({ isLoggedIn });
-
     if (isLoggedIn) {
       form.reset();
-
-      console.log("NAVIGATE");
-
       navigate("/");
     } else {
       return toast({ title: "Sign up failed. Please try again." });
