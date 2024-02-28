@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Models } from "appwrite";
 
+import Loader from "./Loader";
+
 import {
   useDeleteSavedPost,
   useGetCurrentUser,
@@ -8,7 +10,6 @@ import {
   useSavePost,
 } from "@/lib/react-query/queriesAndMutations";
 import { checkIsLiked } from "@/lib/utils";
-import Loader from "./Loader";
 
 type PostStatsProps = {
   post?: Models.Document;

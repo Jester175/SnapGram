@@ -14,8 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import Loader from "@/components/shared/Loader";
-
-import { useToast } from "@/components/ui/use-toast"; // hook
+import { useToast } from "@/components/ui/use-toast";
 
 import { useSignInAccount } from "@/lib/react-query/queriesAndMutations";
 import { SigninValidation } from "@/lib/validation";
@@ -23,11 +22,8 @@ import { useUserContext } from "@/context/AuthContext";
 
 const SigninForm = () => {
   const { toast } = useToast();
-
   const { mutateAsync: signInAccount } = useSignInAccount();
-
   const { checkAuthUser, isLoading: isUserLoading } = useUserContext();
-
   const navigate = useNavigate();
 
   const form = useForm<z.infer<typeof SigninValidation>>({
