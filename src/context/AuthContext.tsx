@@ -57,6 +57,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         return true;
       }
 
+      navigate('/sign-in');
       return false;
     } catch (error) {
       console.error(error);
