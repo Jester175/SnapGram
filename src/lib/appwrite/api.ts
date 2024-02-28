@@ -3,8 +3,6 @@ import { ID, Query } from "appwrite";
 import { INewPost, INewUser, IUpdatePost, IUpdateUser } from "@/types";
 import { account, appwriteConfig, avatars, databases, storage } from "./config";
 
-
-
 // ============================================================
 // AUTH
 // ============================================================
@@ -102,7 +100,6 @@ export async function signOutAccount() {
     console.log(error);
   }
 }
-
 
 // ============================================================
 // POSTS
@@ -277,19 +274,18 @@ export async function getPostById(postId: string) {
 // ============================== DELETE POST
 export async function deletePost(postId?: string, imageId?: string) {
   if (!postId || !imageId) return;
-  
+
   try {
     const statusCode = await databases.deleteDocument(
       appwriteConfig.databaseId,
       appwriteConfig.postCollectionId,
       postId
     );
-    
+
     console.log(statusCode);
-    
+
     if (!statusCode) throw Error;
 
-    
     await deleteFile(imageId);
 
     return { status: "Ok" };
@@ -413,7 +409,6 @@ export async function getUserPosts(userId?: string) {
     console.log(error);
   }
 }
-
 
 // ============================================================
 // USER

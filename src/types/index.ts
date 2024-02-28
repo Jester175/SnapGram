@@ -29,7 +29,6 @@ export type INewUser = {
   password: string;
 };
 
-
 export type INewPost = {
   userId: string;
   caption: string;

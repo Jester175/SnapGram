@@ -82,8 +82,7 @@ const PostForm: FC<PostFormProps> = ({ post, action }) => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-9 w-full max-w-5xl"
-      >
+        className="flex flex-col gap-9 w-full max-w-5xl">
         <FormField
           control={form.control}
           name="caption"
@@ -156,10 +155,8 @@ const PostForm: FC<PostFormProps> = ({ post, action }) => {
           <Button
             type="submit"
             className="shad-button_primary whitespace-nowrap"
-            disabled={isLoadingCreate || isLoadingUpdate}
-
-          >
-            {isLoadingCreate || isLoadingUpdate && 'Loading...'}
+            disabled={isLoadingCreate || isLoadingUpdate}>
+            {isLoadingCreate || (isLoadingUpdate && "Loading...")}
             {action} Post
           </Button>
         </div>

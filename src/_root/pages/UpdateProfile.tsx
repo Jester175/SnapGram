@@ -19,7 +19,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
 import { useUserContext } from "@/context/AuthContext";
-import { useGetUserById, useUpdateUser } from "@/lib/react-query/queriesAndMutations";
+import {
+  useGetUserById,
+  useUpdateUser,
+} from "@/lib/react-query/queriesAndMutations";
 import { ProfileValidation } from "@/lib/validation";
 
 const UpdateProfile = () => {
