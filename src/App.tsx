@@ -22,7 +22,7 @@ import "./globals.css";
 
 const App = () => {
   return (
-    <main className="flex min-h-screen">
+    <main className="flex min-h-screen xs:h-screen">
       <Routes>
         {/* public routes */}
         <Route element={<AuthLayout />}>
