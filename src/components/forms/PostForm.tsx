@@ -78,6 +78,8 @@ const PostForm: FC<PostFormProps> = ({ post, action }) => {
     nagivate("/");
   }
 
+  const handleCancel = () => nagivate(-1);
+
   return (
     <Form {...form}>
       <form
@@ -149,7 +151,7 @@ const PostForm: FC<PostFormProps> = ({ post, action }) => {
           )}
         />
         <div className="flex gap-4 items-center justify-end">
-          <Button type="button" className="shad-button_dark_4">
+          <Button type="button" className="shad-button_dark_4" onClick={handleCancel}>
             Cancel
           </Button>
           <Button

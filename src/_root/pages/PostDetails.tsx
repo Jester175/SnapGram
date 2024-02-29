@@ -61,7 +61,7 @@ const PostDetails = () => {
           />
 
           <div className="post_details-info">
-            <div className="flex-between w-full">
+            <div className="items-start justify-start w-full flex-col xs:flex-row xs:flex-between">
               <Link
                 to={`/profile/${post?.creator.$id}`}
                 className="flex items-center gap-3">
