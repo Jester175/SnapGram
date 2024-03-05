@@ -13,6 +13,15 @@ Application Stack:
 
 <b>updated: 29/02/2024</b>
 
+## Getting Started
+```bash
+npm i
+npm run dev
+# or
+yarn
+yarn dev
+```
+
 <b>Sign-up Form:</b>
 ![SignUp Illustration](https://i.ibb.co/4fCSshg/signup.png)
 
